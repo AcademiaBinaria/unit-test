@@ -40,7 +40,11 @@ module.exports = {
   // ],
 
   // An object that configures minimum threshold enforcement for coverage results
-  // coverageThreshold: null,
+  coverageThreshold: {
+    global: {
+      lines: 70
+    }
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: null,

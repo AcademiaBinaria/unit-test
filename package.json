@@ -24,7 +24,7 @@
   ],
   "main": "main.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --watch -o --coverage",
     "format": "prettier --write",
     "jest": "jest"
   },
