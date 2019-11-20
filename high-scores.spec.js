@@ -1,5 +1,40 @@
 import { HighScores } from './high-scores';
 
+// Feature: the app should allow me to create new tasks
+// As a user
+// I want to create new tasks
+// In order to do my work
+// Scenario: I am on the project list page
+// Given I have a list of projects
+// When I click on one of them
+// Then I should navigate to this project page
+
+/*
+Manage a game player's High Score list.
+
+Your task is to build a high-score component of the classic Frogger game,
+one of the highest selling and addictive games of all time, and a classic of the arcade era.
+Your task is to write methods that return the highest score from the list,
+the last added score and the three highest scores.
+*/
+
+// Arrange
+// Act
+// Assert
+// After
+
+describe('GIVEN: a HighScores class', () => {
+  // Arrange
+  const input = [30, 50, 20, 70];
+  const hs = new HighScores(input);
+  describe('WHEN: I send an array of scores', () => {
+    test('THEN: should return the list o f scores', () => {
+      expect(hs.scores) // act
+        .toEqual([30, 50, 20, 70]); // assert
+    });
+  });
+});
+
 describe('High Scores Test Suite', () => {
   test('List of scores', () => {
     const input = [30, 50, 20, 70];
