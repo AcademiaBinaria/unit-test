@@ -1,7 +1,7 @@
 {
-  "name": "unit-highscores",
+  "name": "unit-test",
   "version": "1.0.0",
-  "description": "Sample use of Jest for unit testing a JS module.",
+  "description": "Unit testing JS modules using Jest.",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@agorabinaria.com",
@@ -9,12 +9,12 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AtomicBuilders/unit-highscores/issues"
+    "url": "https://github.com/AtomicBuilders/unit-test/issues"
   },
-  "homepage": "https://github.com/AtomicBuilders/unit-highscores#readme",
+  "homepage": "https://github.com/AtomicBuilders/unit-test#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AtomicBuilders/unit-highscores.git"
+    "url": "git+https://github.com/AtomicBuilders/unit-test.git"
   },
   "keywords": [
     "JS",

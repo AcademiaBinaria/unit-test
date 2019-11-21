@@ -1,3 +1,3 @@
-# Unit Test of High Scores game
+# Unit Test
 
-Sample use of Jest for unit testing a JS module.
+Unit testing JS modules using Jest.
