@@ -1,7 +1,7 @@
 {
-  "name": "neutron",
+  "name": "unit-highscores",
   "version": "1.0.0",
-  "description": "Minimal JavaScript project setup",
+  "description": "Sample use of Jest for unit testing a JS module.",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@agorabinaria.com",
@@ -9,18 +9,18 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AtomicBuilders/neutron/issues"
+    "url": "https://github.com/AtomicBuilders/unit-highscores/issues"
   },
-  "homepage": "https://github.com/AtomicBuilders/neutron#readme",
+  "homepage": "https://github.com/AtomicBuilders/unit-highscores#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AtomicBuilders/neutron.git"
+    "url": "git+https://github.com/AtomicBuilders/unit-highscores.git"
   },
   "keywords": [
     "JS",
-    "JavaScript",
-    "Seed",
-    "Template"
+    "Test",
+    "Jest",
+    "Unit"
   ],
   "main": "main.js",
   "scripts": {
