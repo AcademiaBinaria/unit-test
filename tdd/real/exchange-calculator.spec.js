@@ -1,4 +1,4 @@
-import { CurrencyConverter } from './exchange-calculator';
+import { ExchangeCalculator } from './exchange-calculator';
 /*
 FEATURE:    Convert an amount from one currency to another
 As a:       money investor
@@ -7,9 +7,9 @@ So:         I can buy or sell money.
 */
 
 // Scenario: form euros to dollars at the last exchange rate
-describe('GIVEN: a CurrencyConverter', () => {
+describe('GIVEN: a ExchangeCalculator', () => {
   // Arrange
-  const sut = new CurrencyConverter();
+  const sut = new ExchangeCalculator();
   describe('WHEN: we convert 1000 EUR to USD', () => {
     const input = [1000, 'EUR', 'USD'];
     //Act

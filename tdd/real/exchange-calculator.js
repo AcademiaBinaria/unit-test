@@ -1,4 +1,4 @@
-export class CurrencyConverter {
+export class ExchangeCalculator {
   convert() {
     return 1200;
   }
