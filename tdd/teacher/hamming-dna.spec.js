@@ -21,6 +21,26 @@ describe('GIVEN: a Hamming Calculator that receives two strings', () => {
       expect(actual).toEqual(expected);
     });
   });
+  describe('WHEN: I compare two single letter identical strands', () => {
+    const input = ['A', 'A'];
+    // Act
+    const actual = sut.compare(...input);
+    test('THEN: should return cero', () => {
+      const expected = 0;
+      // assert
+      expect(actual).toEqual(expected);
+    });
+  });
+  describe('WHEN: I compare two single letter different strands', () => {
+    const input = ['G', 'T'];
+    // Act
+    const actual = sut.compare(...input);
+    test('THEN: should return one', () => {
+      const expected = 1;
+      // assert
+      expect(actual).toEqual(expected);
+    });
+  });
 });
 
 // Scenario: we have two invalid sequences of different lengths
