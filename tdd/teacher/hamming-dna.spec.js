@@ -51,6 +51,16 @@ describe('GIVEN: a Hamming Calculator that receives two strings', () => {
       expect(actual).toEqual(expected);
     });
   });
+  describe('WHEN: I compare two long different strands', () => {
+    const input = ['ACGT', 'TGCA'];
+    // Act
+    const actual = sut.compare(...input);
+    test('THEN: should return more than cero', () => {
+      const expected = 0;
+      // assert
+      expect(actual).toBeGreaterThan(expected);
+    });
+  });
 });
 
 // Scenario: we have two invalid sequences of different lengths
