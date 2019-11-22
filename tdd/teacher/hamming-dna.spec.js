@@ -65,6 +65,11 @@ describe('GIVEN: a Hamming Calculator that receives two strings', () => {
       // assert
       expect(actual).toBeLessThanOrEqual(expected);
     });
+    test('AND THEN: should return exactly the difference', () => {
+      const expected = 4;
+      // assert
+      expect(actual).toEqual(expected);
+    });
   });
 });
 
