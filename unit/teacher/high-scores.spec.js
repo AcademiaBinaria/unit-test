@@ -2,8 +2,8 @@ import { HighScores } from './high-scores';
 
 /*
 FEATURE:    Manage a game player's High Score list.
-Aa a:       player with an array of scores
-I want to:  to get the scores ordered, my last, my best, and my top three scores
+As a:       player with an array of scores
+I want to:  get the scores ordered, my last, my best, and my top three scores
 So:         I can track my progress
 */
 
