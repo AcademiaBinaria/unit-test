@@ -1,3 +1,4 @@
+import { CurrencyConverter } from './exchange-calculator';
 /*
 FEATURE:    Convert an amount from one currency to another
 As a:       money investor
@@ -13,7 +14,7 @@ describe('GIVEN: a CurrencyConverter', () => {
     const input = [1000, 'EUR', 'USD'];
     //Act
     const actual = sut.convert(input);
-    test.skip('THEN: expect to get 1200', () => {
+    test('THEN: expect to get 1200', () => {
       const expected = 1200;
       // assert
       expect(actual).toEqual(expected);
