@@ -13,10 +13,11 @@ describe('GIVEN: a Triangle class called with three legal values', () => {
   describe('WHEN: i ask for the kind', () => {
     //Act
     const kind = triangle.kind();
-    const typeOfResult = typeof kind;
+    const actual = typeof kind;
     test('THEN: should return a string', () => {
+      const expected = 'string';
       // assert
-      expect(typeOfResult).toBe('string');
+      expect(actual).toBe(expected);
     });
   });
 });

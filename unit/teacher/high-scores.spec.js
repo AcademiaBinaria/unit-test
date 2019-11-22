@@ -11,37 +11,41 @@ So:         I can track my progress
 describe('GIVEN: a HighScores class with a big array of scores', () => {
   // Arrange
   const input = [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 90, 70];
-  const hs = new HighScores(input);
+  const highScores = new HighScores(input);
   describe('WHEN: I ask for the scores', () => {
     //Act
-    const scores = hs.scores;
+    const actual = highScores.scores;
     test('THEN: should return the list of scores ordered', () => {
+      const expected = [100, 90, 90, 70, 70, 40, 40, 30, 30, 30, 20, 10, 10, 0];
       // assert
-      expect(scores).toEqual([100, 90, 90, 70, 70, 40, 40, 30, 30, 30, 20, 10, 10, 0]);
+      expect(actual).toEqual(expected);
     });
   });
   describe('WHEN: I ask for Latest score', () => {
     //Act
-    const latest = hs.latest;
+    const actual = highScores.latest;
     test('THEN: should return the last one', () => {
+      const expected = 70;
       // assert
-      expect(latest).toEqual(70);
+      expect(actual).toEqual(expected);
     });
   });
   describe('WHEN: I ask for the personal best', () => {
     //Act
-    const personalBest = hs.personalBest;
+    const actual = highScores.personalBest;
     test('THEN: should return the higher ', () => {
+      const expected = 100;
       // assert
-      expect(personalBest).toEqual(100);
+      expect(actual).toEqual(expected);
     });
   });
   describe('WHEN: I ask for the top three', () => {
     //Act
-    const personalTopThree = hs.personalTopThree;
+    const actual = highScores.personalTopThree;
     test('THEN: should return the three higher scores', () => {
+      const expected = [100, 90, 90];
       // assert
-      expect(personalTopThree).toEqual([100, 90, 90]);
+      expect(actual).toEqual(expected);
     });
   });
 });
@@ -50,13 +54,14 @@ describe('GIVEN: a HighScores class with a big array of scores', () => {
 describe('GIVEN: a HighScores class with a small array of scores', () => {
   // Arrange
   const input = [30, 70];
-  const hs = new HighScores(input);
+  const highScores = new HighScores(input);
   describe('WHEN: I ask for the top three', () => {
     //Act
-    const personalTopThree = hs.personalTopThree;
+    const actual = highScores.personalTopThree;
     test('THEN: should return all the scores', () => {
+      const expected = [70, 30];
       // assert
-      expect(personalTopThree).toEqual([70, 30]);
+      expect(actual).toEqual(expected);
     });
   });
 });
