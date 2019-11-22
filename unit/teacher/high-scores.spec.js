@@ -11,10 +11,10 @@ So:         I can track my progress
 describe('GIVEN: a HighScores class with a big array of scores', () => {
   // Arrange
   const input = [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 90, 70];
-  const highScores = new HighScores(input);
+  const sut = new HighScores(input);
   describe('WHEN: I ask for the scores', () => {
     //Act
-    const actual = highScores.scores;
+    const actual = sut.scores;
     test('THEN: should return the list of scores ordered', () => {
       const expected = [100, 90, 90, 70, 70, 40, 40, 30, 30, 30, 20, 10, 10, 0];
       // assert
@@ -23,7 +23,7 @@ describe('GIVEN: a HighScores class with a big array of scores', () => {
   });
   describe('WHEN: I ask for Latest score', () => {
     //Act
-    const actual = highScores.latest;
+    const actual = sut.latest;
     test('THEN: should return the last one', () => {
       const expected = 70;
       // assert
@@ -32,7 +32,7 @@ describe('GIVEN: a HighScores class with a big array of scores', () => {
   });
   describe('WHEN: I ask for the personal best', () => {
     //Act
-    const actual = highScores.personalBest;
+    const actual = sut.personalBest;
     test('THEN: should return the higher ', () => {
       const expected = 100;
       // assert
@@ -41,7 +41,7 @@ describe('GIVEN: a HighScores class with a big array of scores', () => {
   });
   describe('WHEN: I ask for the top three', () => {
     //Act
-    const actual = highScores.personalTopThree;
+    const actual = sut.personalTopThree;
     test('THEN: should return the three higher scores', () => {
       const expected = [100, 90, 90];
       // assert
@@ -54,10 +54,10 @@ describe('GIVEN: a HighScores class with a big array of scores', () => {
 describe('GIVEN: a HighScores class with a small array of scores', () => {
   // Arrange
   const input = [30, 70];
-  const highScores = new HighScores(input);
+  const sut = new HighScores(input);
   describe('WHEN: I ask for the top three', () => {
     //Act
-    const actual = highScores.personalTopThree;
+    const actual = sut.personalTopThree;
     test('THEN: should return all the scores', () => {
       const expected = [70, 30];
       // assert
