@@ -85,4 +85,12 @@ describe('GIVEN: a Hamming Calculator with a that receives two invalid strings',
         .toThrow(); // assert
     });
   });
+  describe('WHEN: the second strand is longer', () => {
+    const input = ['A', 'AC'];
+    const actual = () => sut.compare(...input);
+    test('THEN: should throw an error', () => {
+      expect(actual) //Act
+        .toThrow(); // assert
+    });
+  });
 });
