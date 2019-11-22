@@ -60,6 +60,11 @@ describe('GIVEN: a Hamming Calculator that receives two strings', () => {
       // assert
       expect(actual).toBeGreaterThan(expected);
     });
+    test('AND THEN: should return less than or equal of strands length', () => {
+      const expected = 4;
+      // assert
+      expect(actual).toBeLessThanOrEqual(expected);
+    });
   });
 });
 
