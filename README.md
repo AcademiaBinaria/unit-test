@@ -7,6 +7,11 @@ npm i
 npm t
 ```
 
+## Test after code
+
+## TDD Test before code
+
+
 ### VS Code recommended extensions
 
 - orta.vscode-jest
