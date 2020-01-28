@@ -12,6 +12,27 @@ npm t
 ## TDD Test before code
 
 
+### Snippet
+
+```javascript
+describe('GIVEN: an scenario', () => {
+  beforeEach(() => {
+    // Arrange
+    const sut = null;
+  });
+  describe('WHEN: user action or event occurs', () => {
+    const input = null;
+    //Act
+    const actual = null;
+    test('THEN: should been verified', () => {
+      // assert
+      const expected = null;
+      expect(actual).toEqual(expected);
+    });
+  });
+});
+```
+
 ### VS Code recommended extensions
 
 - orta.vscode-jest
